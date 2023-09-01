@@ -26,6 +26,7 @@ override_dh_auto_build: vet
 
 # We do not vet vendor code
 vet:
+	go env -w GO111MODULE=off
 	GOPATH=$(CURDIR)/$(GO_BUILD_DIR) go vet $$(find . -type f -name \*.go | \
 	xargs dirname | sort -u | grep -v "/vendor/");
 
