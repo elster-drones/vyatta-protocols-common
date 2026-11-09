@@ -8,13 +8,13 @@ Build-Depends:
  dh-golang,
  dh-python,
  dh-yang,
- golang-any,
+ golang-any:native,
 # Ensure required dependencies are also added to golang-vyatta-protocols-dev
  golang-github-danos-encoding-rfc7951-dev,
  golang-github-danos-vci-dev (>= 4.2),
  golang-github-hashicorp-go-multierror-dev,
  golang-github-sirupsen-logrus-dev,
- python3
+ python3:native
 Standards-Version: 3.9.8
 
 Package: vyatta-protocols-common
